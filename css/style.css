@@ -120,7 +120,6 @@ a {
 
 .in-trend-title {
   margin-top: 58px;
-  padding-left: 5px;
 
   font-size: 20px;
   font-weight: 700;
@@ -240,7 +239,7 @@ a {
 .main-wrapper {
   display: flex;
   justify-content: space-between;
-  padding-top: 60px;
+  padding-top: 63px;
   margin: auto;
 }
 
@@ -253,7 +252,7 @@ a {
 }
 
 .main-post:not(:last-child) {
-  margin-bottom: 60px;
+  margin-bottom: 56px;
 }
 
 .main-post-img {
@@ -334,7 +333,7 @@ a {
 
 .aside {
   width: 272px;
-  margin-left: 115px;
+  margin-left: 116px;
 }
 
 .new-posts-title {
@@ -400,7 +399,7 @@ a {
 .post-search {
   position: relative;
 
-  margin-top: 64px;
+  margin-top: 60px;
 }
 
 .search-input {
@@ -594,7 +593,7 @@ a {
 
 .themes-list-item {
   box-sizing: border-box;
-  padding: 15px 0 12px 0;
+  padding: 16px 0 8px 0;
   border-bottom: 1px solid #eeeeee;
 
   font-size: 14px;
@@ -617,7 +616,6 @@ a {
 
 .products-title {
   margin-top: 60px;
-  padding-left: 5px;
 
   font-size: 20px;
   font-weight: 700;
@@ -661,20 +659,19 @@ a {
   flex-grow: 1;
 
   margin-top: -30px;
-  padding: 48px 15px 25px 22px;
+  padding: 42px 22px 25px 22px;
   border: 3px solid #b59f5b;
 }
 
 .product-title {
-  margin: 0 0 5px 0;
-
+  margin: 0;
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 700;
 }
 
 .product-description {
-  margin: 0 0 20px 0;
+  margin: 0 0 24px 0;
 
   font-size: 15px;
   line-height: 22px;
@@ -730,17 +727,18 @@ a {
 }
 
 .footer {
-  margin-top: 70px;
+  margin: auto;
+  margin-top: 65px;
+  max-width: 1170px;
 }
 
 .footer-wrapper {
   margin: auto;
-  padding: 0 15px;
 }
 
 .footer-address {
   background-color: #f4f7f6;
-  margin-bottom: 68px;
+  margin-bottom: 71px;
   padding: 30px 0;
 }
 
@@ -781,7 +779,7 @@ a {
   bottom: 0;
   z-index: 4;
 
-  display: none;
+  /* display: none; */
 
   height: 100%;
 
@@ -802,11 +800,20 @@ a {
   background-color: #fff;
   }
 
+.popup-close-btn {
+  visibility: hidden;
+}
+
+.popup-close-btn:hover {
+  cursor: pointer;
+}
+
 .popup-close {
   position: absolute;
   top: -23px;
   right: 0;
 
+  visibility: visible;
   width: 16px;
   height: 16px;
 }
@@ -817,6 +824,7 @@ a {
 
 .popup-title {
   padding-left: 5px;
+  margin: 0;
 
   font-size: 20px;
   font-weight: 700;
@@ -947,6 +955,12 @@ a {
   cursor: pointer;
 }
 
+@media (max-width: 1425px) {
+  .main-wrapper {
+    padding-top: 40px;
+  }
+}
+
 @media (min-width: 641px) and (max-width: 1200px) {
   .header {
     background-image: url("../image/banner-bg-tablet.jpg");
@@ -975,8 +989,8 @@ a {
   }
 
   .header-title {
-    width: 80%;
-    max-width: 650px;
+    width: 90%;
+    max-width: 660px;
     padding-top: 90px;
     padding-bottom: 111px;
 
@@ -1001,25 +1015,28 @@ a {
 
   .in-trend-post {
     width: calc((100% - 4px) / 2);
-    margin-bottom: 3px;
-    padding-top: 85px;
+    min-height: 247px;
+    padding: 75px 17px 0 13px;
+    margin-bottom: 2px;
   }
 
   .in-trend-post-content {
-    padding-right: 65px;
+    padding: 30px 30px 32px 30px;
   }
 
   .in-trend-text {
+    margin-top: 4px;
+
     font-size: 17px;
     line-height: 22px;
   }
 
   .wrapper {
-    padding: 0 30px;
+    padding: 0 25px;
   }
 
   .main-wrapper {
-    padding-top: 41px;
+    padding-top: 45px;
   }
 
   .main {
@@ -1034,7 +1051,7 @@ a {
   .main-post::after {
     content: "";
 
-    margin-top: 22px;
+    margin-top: 15px;
     width: 100%;
     max-width: 395px;
     height: 3px;
@@ -1043,7 +1060,7 @@ a {
   }
 
   .main-post:not(:last-child) {
-    margin-bottom: 38px;
+    margin-bottom: 37px;
   }
 
   .main-post:last-child::after {
@@ -1060,6 +1077,10 @@ a {
     margin: 0;
   }
 
+  .post-content-tags {
+    margin-top: 10px;
+  }
+
   .post-content-title {
     font-size: 17px;
     line-height: 22px;
@@ -1074,7 +1095,7 @@ a {
   }
 
   .products-title {
-    margin-top: 40px;
+    margin-top: 45px;
 
     font-size: 18px;
   }
@@ -1217,7 +1238,7 @@ a {
   }
 
   .wrapper {
-    padding: 0 16px;
+    padding: 0 10px;
   }
 
   .main-wrapper {
@@ -1232,7 +1253,7 @@ a {
   .main-post::after {
     content: "";
 
-    margin-top: 22px;
+    margin-top: 20px;
     width: 100%;
     height: 3px;
 
@@ -1284,7 +1305,7 @@ a {
   }
 
   .new-post {
-    padding-bottom: 13px;
+    padding-bottom: 16px;
   }
 
   .post-search {
@@ -1371,7 +1392,7 @@ a {
   }
 
   .footer {
-    margin-top: 15px;
+    margin-top: 0;
   }
 
   .footer-address {
